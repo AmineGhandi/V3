@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en" data-navbar="sticky" data-theme="light">
+	
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>V3</title>
+        <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;1,700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+		<link href="assets/css/screen.min03fa.css?v=dc181463ce" rel="stylesheet">
+		<style id="tag-color-variable">
+		</style>
+		<style>
+    .switch-mode {
+        position:fixed;
+        top: 400px;
+        right:-100px;
+        text-transform: uppercase;
+        background-color: var(--black);
+        color: var(--white);
+        width: 100px;
+        text-align: center;
+        transition: all 0.25s ease-in-out;
+    }
+    .switch-mode.visible {
+        right: 0px;
+    }
+    .switch-mode span {
+        cursor: pointer;
+        display: block;
+        padding: 8px;
+    }
+    .switch-mode .panel-icon {
+        position: absolute;
+        left: -32px;
+        top: 0;
+        padding: 8px;
+        height: 32px;
+        background-color: var(--theme-color);
+        line-height: 0;
+        border-radius: 5px 0 0 5px;
+    }
+    .switch-mode .panel-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+    .switch-mode .option:hover {
+        background: var(--theme-color);
+    }
+    .switch-mode .option svg{
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 4px;
+        margin-top:-2px;
+    }
+    .switch-mode .option.light {background: var(--theme-color);}
+    [data-theme="dark"] .switch-mode .option.dark {background: var(--theme-color);}
+    [data-theme="dark"] .switch-mode .option.light {background: var(--black);}
+</style>
+<script>
+    if(typeof(Storage) !== 'undefined') {
+        if (localStorage.getItem('selected-theme') == 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+        else if (localStorage.getItem('selected-theme') == 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    }
+</script>		
+    <meta name="description" content="V3">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="page/2/index.html">
+    
+    <meta property="og:site_name" content="V3">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="V3">
+    <meta property="og:description" content="V3 is a magazine / newspaper / blog style  highly content focus theme for ghost blogging platform. It is responsive means it will fit in various device of different size.">
+    <meta property="og:url" content="https://V3.gbjsolution.com/">
+    <meta property="article:publisher" content="https://www.facebook.com/gbjsolution">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="V3">
+    <meta name="twitter:description" content="V3 is a magazine / newspaper / blog style  highly content focus theme for ghost blogging platform. It is responsive means it will fit in various device of different size.">
+    <meta name="twitter:url" content="https://V3.gbjsolution.com/">
+    <meta name="twitter:site" content="@gbjsolution">
+    
+
+
+    <meta name="generator" content="Ghost 5.64">
+    <link rel="alternate" type="application/rss+xml" title="V3" href="rss/index.html">
+    <script defer src="../cdn.jsdelivr.net/ghost/portal%40_2.36/umd/portal.min.js" data-i18n="false" data-ghost="https://V3.gbjsolution.com/" data-key="42e5b52ab21136ce4679b34817" data-api="https://V3.gbjsolution.com/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><script async src="https://js.stripe.com/v3/"></script>
+    <script defer src="../cdn.jsdelivr.net/ghost/sodo-search%40_1.1/umd/sodo-search.min.js" data-key="42e5b52ab21136ce4679b34817" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://V3.gbjsolution.com/" crossorigin="anonymous"></script>
+    
+    <link href="webmentions/receive/index.html" rel="webmention">
+    <script defer src="public/cards.min03fa.js?v=dc181463ce"></script>
+    <link rel="stylesheet" type="text/css" href="public/cards.min03fa.css?v=dc181463ce">
+    <script defer src="public/member-attribution.min03fa.js?v=dc181463ce"></script>
+    <style>
+    .tc-technology {--t-color: #1687F7;}
+    .tc-inspiration {--t-color: #f7a205;}
+    .tc-sports {--t-color: #9c1600;}
+    .tc-travel {--t-color: #fc5d00;}
+    .tc-business {--t-color: #004fc5;}
+    .tc-lifestyle {--t-color: #ff01a3;}
+    .tc-health {--t-color: #c908e0;}
+    .tc-food {--t-color: #ff1e56;}
+    .tc-nature {--t-color: #39b209;}
+</style><style>:root {--ghost-accent-color: #6b48ff;}</style>
+	</head>
+	<body class="home-template">
+		<div class="site-wrap">
+		<header class="site-header">
+    <!-- header top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="date-wrap flex">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.4h1.2c1.985 0 3.6 1.615 3.6 3.6v14.4c0 1.985-1.615 3.6-3.6 3.6H4.8a3.604 3.604 0 01-3.6-3.6V6c0-1.985 1.615-3.6 3.6-3.6H6V1.2C6 .54 6.54 0 7.2 0c.66 0 1.2.54 1.2 1.2v1.2h7.2V1.2c0-.66.54-1.2 1.2-1.2.66 0 1.2.54 1.2 1.2v1.2zM4.8 4.8H6V6c0 .66.54 1.2 1.2 1.2.66 0 1.2-.54 1.2-1.2V4.8h7.2V6c0 .66.54 1.2 1.2 1.2.66 0 1.2-.54 1.2-1.2V4.8h1.2c.661 0 1.2.539 1.2 1.2v4.8H3.6V6c0-.661.539-1.2 1.2-1.2zm0 16.8h14.4c.661 0 1.2-.539 1.2-1.2v-7.2H3.6v7.2c0 .661.539 1.2 1.2 1.2zm2.4-6c-.66 0-1.2.54-1.2 1.2 0 .66.54 1.2 1.2 1.2.66 0 1.2-.54 1.2-1.2 0-.66-.54-1.2-1.2-1.2zm9.6 0H12c-.66 0-1.2.54-1.2 1.2 0 .66.54 1.2 1.2 1.2h4.8c.66 0 1.2-.54 1.2-1.2 0-.66-.54-1.2-1.2-1.2z"/></svg>
+                        <span id="todaysDate"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="no-style-list social-links">
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"></path></svg></a></li>
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a></li>
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a></li>
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a></li>
+</ul>                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header middle -->
+
+    <div class="header-bottom">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    
+
+                    <!--  -->
+                    <div class="nav-bar flex">
+                        <a href="#" class="logo-image">
+        
+                            <img src="assets/images/Asset2.png?v=dc181463ce" alt="">
+                            </a>
+                        <nav class="nav-left">
+                            <ul class="nav-list nav-list-primary text-upper no-style-list">
+                                <li><a href="index.html" class="nav-current">Home</a></li>
+<li><a href="#">Tags</a></li>
+<li><a href="#">Authors</a></li>
+<li><a href="#">Hamid</a></li>
+<li><a href="#">Hamid</a></li>
+<li><a href="#">Hamid</a></li>
+<li><a href="#">Hamid</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Test</a></li>
+<li><a href="#">404 error</a></li>
+
+                                <li class="more-link"><a href="javascript:">More<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.39 0-.78-.132-1.097-.398L.617 9.03a1.713 1.713 0 112.194-2.633l9.208 7.673 9.192-7.397a1.715 1.715 0 012.15 2.671l-10.286 8.277A1.714 1.714 0 0112 18"/></svg></a>
+                                <ul class="dropdown"></ul>
+                                </li>
+                            </ul>
+                            <a class="menu-icon nav-icon" id="js-menu-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </a>
+                        </nav>
+                        <nav class="nav-right">
+                            <ul class="nav-list nav-list-primary no-style-list text-upper">
+                                <li class="nav-item nav-icon user-icon">
+                                    <a href="javascript:;" class="text-center" aria-haspopup="true" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z"/></svg>                                    </a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="signup/index.html">Sign up</a>
+                                        </li>
+                                        <li>
+                                            <a href="login/index.html">Log in</a>
+                                        </li>
+                                    </ul>
+                                    
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-wrap" id="mobile-nav">
+        <ul class="no-style-list mobile-nav">
+            <li><a href="index.html" class="nav-current">Home</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Test</a></li>
+            <li><a href="#">404 error</a></li>
+
+        </ul>
+    </div>
+    <div class="backdrop" id="backdrop"></div>
+</header>        <main class="main-content-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+    <div class="row block featured-posts-wrap clearfix">
+        <div class="col-xl-8 col-lg-8 f-left">
+            <article class="post post-large post-compact has-img">
+                <div class="post-img-wrap loading-bg">
+                    <img class="post-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-srcset="/content/images/size/w1000/2020/06/brooke-lark-V4MBq8kue3U-unsplash.jpg 1000w,
+                            /content/images/size/w600/2020/06/brooke-lark-V4MBq8kue3U-unsplash.jpg 600w,
+                            /content/images/size/w300/2020/06/brooke-lark-V4MBq8kue3U-unsplash.jpg 300w"
+                        data-sizes="(max-width: 347px) 300px, (max-width: 660px) 600px, 1000px"
+                        data-src="content/images/size/w1000/2020/06/brooke-lark-V4MBq8kue3U-unsplash.jpg"
+                        alt="Dramatically improve your cooking using just your imagination">
+                </div>
+                <a href="dramatically-improve-your-cooking-using-just-your-imagination/index.html" aria-label="Dramatically improve your cooking using just your imagination" class="overlay-link"></a>
+                <div class="post-content">
+                    <div class="tag-wrap">
+                        <a href="tag/food/index.html" class="tag tag-pill tc-food">Food</a>
+                    </div>
+                    <h2 class="post-title h4">Dramatically improve your cooking using just your imagination</h2>
+                    <div class="post-meta">
+                        <time class="pub-date" datetime="2020-06-24">Jun 24, 2020</time>
+                        <span class="read-time">4 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-lg-4 col-sm-6 f-left">
+            <article class="post post-compact has-img">
+                <div class="post-img-wrap loading-bg">
+                    <img class="post-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-srcset="/content/images/size/w300/2020/06/hidayat-abisena--A2IuOZnmHs-unsplash.jpg 300w,
+                            /content/images/size/w600/2020/06/hidayat-abisena--A2IuOZnmHs-unsplash.jpg 600w"
+                        data-sizes="(min-width: 576px) and (max-width: 690px) 300px, 600px"
+                        data-src="content/images/size/w600/2020/06/hidayat-abisena--A2IuOZnmHs-unsplash.jpg"
+                        alt="In all things of nature there is something of the marvelous">
+                </div>
+                <a href="in-all-things-of-nature-there-is-something-of-the-marvelous/index.html" aria-label="In all things of nature there is something of the marvelous" class="overlay-link"></a>
+                <div class="post-content">
+                    <div class="tag-wrap">
+                        <a href="tag/nature/index.html" class="tag tag-pill tc-nature">Nature</a>
+                    </div>
+                    <h2 class="post-title h4">In all things of nature there is something of the marvelous</h2>
+                    <div class="post-meta">
+                        <time class="pub-date" datetime="2020-05-21">May 21, 2020</time>
+                        <span class="read-time">3 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-lg-4 col-sm-6 f-left">
+            <article class="post post-compact has-img">
+                <div class="post-img-wrap loading-bg">
+                    <img class="post-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-srcset="/content/images/size/w300/2020/06/zen-bear-yoga-IVf7hm88zxY-unsplash.jpg 300w,
+                            /content/images/size/w600/2020/06/zen-bear-yoga-IVf7hm88zxY-unsplash.jpg 600w"
+                        data-sizes="(min-width: 576px) and (max-width: 690px) 300px, 600px"
+                        data-src="content/images/size/w600/2020/06/zen-bear-yoga-IVf7hm88zxY-unsplash.jpg"
+                        alt="All the money in the world can&#x27;t buy you back good health">
+                </div>
+                <a href="all-the-money-in-the-world-cant-buy-you-back-good-health/index.html" aria-label="All the money in the world can&#x27;t buy you back good health" class="overlay-link"></a>
+                <div class="post-content">
+                    <div class="tag-wrap">
+                        <a href="tag/lifestyle/index.html" class="tag tag-pill tc-lifestyle">Lifestyle</a>
+                    </div>
+                    <h2 class="post-title h4">All the money in the world can&#x27;t buy you back good health</h2>
+                    <div class="post-meta">
+                        <time class="pub-date" datetime="2020-05-21">May 21, 2020</time>
+                        <span class="read-time">3 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-lg-4 col-sm-6 f-left">
+            <article class="post post-compact has-img">
+                <div class="post-img-wrap loading-bg">
+                    <img class="post-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-srcset="/content/images/size/w300/2020/06/mr-tt-xb0wLfZH9Zo-unsplash.jpg 300w,
+                            /content/images/size/w600/2020/06/mr-tt-xb0wLfZH9Zo-unsplash.jpg 600w"
+                        data-sizes="(min-width: 576px) and (max-width: 690px) 300px, 600px"
+                        data-src="content/images/size/w600/2020/06/mr-tt-xb0wLfZH9Zo-unsplash.jpg"
+                        alt="With age, comes wisdom. With travel, comes understanding">
+                </div>
+                <a href="with-age-comes-wisdom-with-travel-comes-understanding/index.html" aria-label="With age, comes wisdom. With travel, comes understanding" class="overlay-link"></a>
+                <div class="post-content">
+                    <div class="tag-wrap">
+                        <a href="tag/travel/index.html" class="tag tag-pill tc-travel">Travel</a>
+                    </div>
+                    <h2 class="post-title h4">With age, comes wisdom. With travel, comes understanding</h2>
+                    <div class="post-meta">
+                        <time class="pub-date" datetime="2020-05-20">May 20, 2020</time>
+                        <span class="read-time">3 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-lg-4 col-sm-6 f-left">
+            <article class="post post-compact has-img">
+                <div class="post-img-wrap loading-bg">
+                    <img class="post-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-srcset="/content/images/size/w300/2020/06/josh-wedgwood-9LQTT02LYaE-unsplash.jpg 300w,
+                            /content/images/size/w600/2020/06/josh-wedgwood-9LQTT02LYaE-unsplash.jpg 600w"
+                        data-sizes="(min-width: 576px) and (max-width: 690px) 300px, 600px"
+                        data-src="content/images/size/w600/2020/06/josh-wedgwood-9LQTT02LYaE-unsplash.jpg"
+                        alt="Fear is only temporary, regrets last forever">
+                </div>
+                <a href="fear-is-only-temporary-regrets-last-forever/index.html" aria-label="Fear is only temporary, regrets last forever" class="overlay-link"></a>
+                <div class="post-content">
+                    <div class="tag-wrap">
+                        <a href="tag/inspiration/index.html" class="tag tag-pill tc-inspiration">Inspiration</a>
+                    </div>
+                    <h2 class="post-title h4">Fear is only temporary, regrets last forever</h2>
+                    <div class="post-meta">
+                        <time class="pub-date" datetime="2020-05-20">May 20, 2020</time>
+                        <span class="read-time">3 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-lg-4 col-sm-6 f-left">
+            <article class="post post-compact has-img">
+                <div class="post-img-wrap loading-bg">
+                    <img class="post-img lazy" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                        data-srcset="/content/images/size/w300/2020/06/pablo-fierro-QfTXtDEWe7g-unsplash.jpg 300w,
+                            /content/images/size/w600/2020/06/pablo-fierro-QfTXtDEWe7g-unsplash.jpg 600w"
+                        data-sizes="(min-width: 576px) and (max-width: 690px) 300px, 600px"
+                        data-src="content/images/size/w600/2020/06/pablo-fierro-QfTXtDEWe7g-unsplash.jpg"
+                        alt="5 things to do in Meghalaya - the abode of clouds">
+                </div>
+                <a href="5-things-to-do-in-meghalaya-the-abode-of-clouds/index.html" aria-label="5 things to do in Meghalaya - the abode of clouds" class="overlay-link"></a>
+                <div class="post-content">
+                    <div class="tag-wrap">
+                        <a href="tag/travel/index.html" class="tag tag-pill tc-travel">Travel</a>
+                    </div>
+                    <h2 class="post-title h4">5 things to do in Meghalaya - the abode of clouds</h2>
+                    <div class="post-meta">
+                        <time class="pub-date" datetime="2020-05-20">May 20, 2020</time>
+                        <span class="read-time">1 min read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>            
+
+
+</div>
+</div>
+</main>
+        <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="widget widget-about">
+    <h4 class="widget-title text-upper">Chi 7aja 3lina</h4>
+    <div class="widget-content">
+        <div class="about-info">
+            Hamid Lamid’s a super hero known for his giga chad super powers he only help 
+            people with disabilities, wa9ila. Hamid Lamid’s a super hero known for his giga chad super powers he only help 
+            people with disabilities, wa9ila.        </div>
+        <ul class="no-style-list social-links">
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"></path></svg></a></li>
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a></li>
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a></li>
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a></li>
+</ul>    </div>
+</div>            </div>
+            <div class="col-md-3 offset-md-1">
+                <div class="widget widget-navigation">
+    <h4 class="widget-title text-upper">aji navigi l mok</h4>
+    <div class="widget-content">
+        <ul class="no-style-list">
+            <li><a href="#">Tags</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">Hamid</a></li>
+            <li><a href="#">Hamid</a></li>
+
+        </ul>
+    </div>
+</div>            </div>
+            <div class="col-md-5">
+                <div class="widget widget-subscribe">
+    <div class="widget-content">
+        <div class="subscription-wrap text-center">
+            <h4 class="subscription-title">Subscribe to newsletter</h4>
+            <p class="subscription-description">Stay up to date! Get all the latest posts delivered straight to your inbox.</p>
+            <form class="signup-form text-left" data-members-form="subscribe">
+                <div class="form-field-wrap field-group-inline">
+                    <label for="email" class="sr-only">Email</label>
+                    <input data-members-email="" type="email" class="email form-field" id="email" placeholder="Your email address" required autocomplete="email">
+                    <button class="btn form-field" type="submit">Subscribe</button>
+                </div>
+                <div class="text-center">
+                    <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to confirm your subscription</div>
+                    <div class="message-error"><strong>Error!</strong> Please enter a valid email address!</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-bottom-wrap flex">
+                    <div class="copyright">
+                            &copy; 2024 <a href="index.html">Veni Vedi Veci</a> - All right Reserved. Published by <a href="https://ghost.org/?via=biswajit48">Dust</a>
+                    </div>
+                    <div class="top-link-wrap">
+                        <div class="back-to-top">
+                            <a id="back-to-top" href="javascript:;">Top<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.848 9.96a1.5 1.5 0 002.112.192l6.54-5.45V22.5a1.5 1.5 0 003 0V4.703l6.54 5.449a1.499 1.499 0 101.92-2.304l-9-7.5c-.07-.06-.155-.088-.233-.133-.061-.037-.115-.078-.183-.105A1.488 1.488 0 0012 0c-.186 0-.37.04-.545.11-.067.027-.121.068-.183.104-.078.046-.162.074-.232.134l-9 7.5a1.499 1.499 0 00-.192 2.112"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>		
+
+</div>
+		<div class="search-popup js-search-popup">
+    <div class="search-popup-bg"></div>
+	<a href="javascript:;" class="close-button" id="search-close" aria-label="Close search">
+		<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.3477 11.9986L21.5075 4.85447C21.821 4.54089 21.9972 4.11558 21.9972 3.67211C21.9972 3.22864 21.821 2.80333 21.5075 2.48975C21.1939 2.17617 20.7687 2 20.3253 2C19.8819 2 19.4566 2.17617 19.1431 2.48975L12 9.65051L4.8569 2.48975C4.54337 2.17617 4.11812 2 3.67471 2C3.2313 2 2.80606 2.17617 2.49252 2.48975C2.17898 2.80333 2.00284 3.22864 2.00284 3.67211C2.00284 4.11558 2.17898 4.54089 2.49252 4.85447L9.65227 11.9986L2.49252 19.1427C2.33646 19.2975 2.21259 19.4817 2.12805 19.6846C2.04352 19.8875 2 20.1052 2 20.3251C2 20.5449 2.04352 20.7626 2.12805 20.9655C2.21259 21.1684 2.33646 21.3526 2.49252 21.5074C2.64731 21.6635 2.83147 21.7874 3.03437 21.8719C3.23727 21.9565 3.4549 22 3.67471 22C3.89452 22 4.11215 21.9565 4.31505 21.8719C4.51796 21.7874 4.70211 21.6635 4.8569 21.5074L12 14.3466L19.1431 21.5074C19.2979 21.6635 19.482 21.7874 19.6849 21.8719C19.8878 21.9565 20.1055 22 20.3253 22C20.5451 22 20.7627 21.9565 20.9656 21.8719C21.1685 21.7874 21.3527 21.6635 21.5075 21.5074C21.6635 21.3526 21.7874 21.1684 21.8719 20.9655C21.9565 20.7626 22 20.5449 22 20.3251C22 20.1052 21.9565 19.8875 21.8719 19.6846C21.7874 19.4817 21.6635 19.2975 21.5075 19.1427L14.3477 11.9986Z"/>
+</svg>
+	</a>
+	<div class="popup-inner">
+        <div class="inner-container">
+            <div>
+            <form class="search-form" id="search-form">
+                <div class="field-group-search-form">
+                <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg></div>
+                    <input type="text" class="search-input" placeholder="Type to search" id="search-input" aria-label="Type to search" role="searchbox">
+                </div>
+            </form>
+            </div>
+            <div class="search-close-note">Press ESC to close.</div>
+            <div class="search-result" id="search-results"></div>
+        </div>
+	</div>
+</div>		
+
+
+<script>
+
+			var apiKey = "7b4219a974bc4a40e05f6fbeaf"
+            var nextPage = '2';
+            var totalPages = '9';
+			var loadingText ='Loading...';
+        </script>
+		<script src="assets/js/app.bundle.min03fa.js?v=dc181463ce"></script>
+		<div class="switch-mode" id="panel">
+    <span class="panel-icon" id="show_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.87 7.197-8 11.699-8 16.075 0 4.378 3.579 7.925 8 7.925s8-3.547 8-7.925c0-4.376-3.13-8.878-8-16.075zm-.027 5.12c.467.725 1.027 1.987 1.027 3.32 0 3.908-4 4.548-4 2.17 0-1.633 1.988-4.044 2.973-5.49z"/></svg></span>
+    <span class="option dark" id="o-dark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="moon"><rect width="24" height="24" opacity="0"/><path d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15 10.46 10.46 0 0 1-.26-14 10.13 10.13 0 0 1 4-2.74 1 1 0 0 1 1.06.22 1 1 0 0 1 .24 1 8.4 8.4 0 0 0 1.94 8.81 8.47 8.47 0 0 0 8.83 1.94 1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3z"/></g></g></svg>Dark</span>
+    <span class="option light" id="o-light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="sun"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1z"/><path d="M21 11h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2z"/><path d="M6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1z"/><path d="M6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28 1 1 0 0 0 .72-.31 1 1 0 0 0 0-1.41z"/><path d="M17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.31z"/><path d="M12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1z"/><path d="M17.73 16.14a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28 1 1 0 0 0 .72-.3 1 1 0 0 0 0-1.42z"/><path d="M6.27 16.14l-1.44 1.39a1 1 0 0 0 0 1.42 1 1 0 0 0 .72.3 1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44z"/><path d="M12 8a4 4 0 1 0 4 4 4 4 0 0 0-4-4z"/></g></g></svg>Light</span>
+</div>
+<script>
+    var panel = document.getElementById('panel');
+    var showIcon = document.getElementById('show_icon');
+    showIcon.addEventListener('click', function(){
+        panel.classList.toggle('visible');
+    });
+    
+    var oDark = document.getElementById('o-dark');
+    var oLight = document.getElementById('o-light');
+    var html = document.documentElement;
+    oDark.addEventListener('click', function() {
+        html.setAttribute('data-theme', 'dark');
+        localStorage.setItem('selected-theme', 'dark');
+    });
+    oLight.addEventListener('click', function() {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('selected-theme', 'light');
+    });
+
+
+      // Get today's date
+      var today = new Date();
+
+// Format the date (adjust the format as needed)
+var formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+    // Add (GMT+1) to the end of the formatted date
+formattedDate += " (GMT+1)";
+// Set the formatted date to the span element
+document.getElementById('todaysDate').textContent = formattedDate;
+
+</script>		
+        
+	</body>
+</html>
